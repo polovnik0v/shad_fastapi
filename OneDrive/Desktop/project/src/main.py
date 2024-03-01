@@ -25,7 +25,7 @@ def create_application():
         description="Учебное приложение для группы MTS Shad",
         version="0.0.1",
         responses={404: {"description": "Not Found!"}},
-        default_response_class=ORJSONResponse, 
+        default_response_class=ORJSONResponse,  # Подключаем быстрый сериализатор,
         lifespan=lifespan,
     )
 
